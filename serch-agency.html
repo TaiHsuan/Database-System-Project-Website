@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>托嬰機構與保母查詢系統 : 機構搜尋</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="serch-nanny.css" media="screen">
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+      <header id="header">
+        <h1><a href="index.html">托嬰機構與保母查詢系統</a></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li>
+              <a href="#" class="icon solid fa-angle-down">功能</a>
+              <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="serch-nanny.html">保母搜尋</a></li>
+                <li><a href="login.html">登入</a></li>
+                <li><a href="profile.html">個人資訊</a></li>
+              </ul>
+            </li>
+            <li><a href="login.html" class="button">登入</a></li>
+          </ul>
+        </nav>
+      </header>
+
+			<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>機構搜尋</h2>
+					</header>
+					<div class="box">
+            <form method="" action="">
+              <div class="row gtr-uniform gtr-50">
+                  <label for="select-59df" class="u-label">縣市</label>
+                  <div class="col-12">
+                    <select name="category" id="category">
+                      <option value="基隆市" data-calc="基隆市" selected="selected">基隆市</option>
+                      <option value="台北市" data-calc="台北市">台北市</option>
+                      <option value="桃園市" data-calc="桃園市">桃園市</option>
+                      <option data-calc="新北市" value="新北市">新北市</option>
+                      <option data-calc="新竹縣" value="新竹縣">新竹縣</option>
+                      <option data-calc="新竹市" value="新竹市">新竹市</option>
+                      <option data-calc="苗栗縣" value="苗栗縣">苗栗縣</option>
+                      <option data-calc="台中市" value="台中市">台中市</option>
+                      <option data-calc="彰化縣" value="彰化縣">彰化縣</option>
+                      <option data-calc="雲林縣" value="雲林縣">雲林縣</option>
+                      <option data-calc="南投縣" value="南投縣">南投縣</option>
+                      <option data-calc="嘉義市" value="嘉義市">嘉義市</option>
+                      <option data-calc="嘉義縣" value="嘉義縣">嘉義縣</option>
+                      <option data-calc="台南市" value="台南市">台南市</option>
+                      <option data-calc="高雄市" value="高雄市">高雄市</option>
+                      <option data-calc="屏東縣" value="屏東縣">屏東縣</option>
+                      <option data-calc="台東縣" value="台東縣">台東縣</option>
+                      <option data-calc="花蓮縣" value="花蓮縣">花蓮縣</option>
+                      <option value="宜蘭縣" data-calc="宜蘭縣">宜蘭縣</option>
+                      <option data-calc="澎湖縣" value="澎湖縣">澎湖縣</option>
+                      <option data-calc="金門縣" value="金門縣">金門縣</option>
+                      <option data-calc="連江縣" value="連江縣">連江縣</option>
+                    </select>
+                  </div>
+                  <label class="u-label">機構類別</label>
+                  <div class="col-3">
+                    <input type="checkbox" name="Unlimited" id="Unlimited" value="Unlimited">
+                    <label for="Unlimited">不限</label>
+                  </div>
+                  <div class="col-3">
+                    <input type="checkbox" name="Private" id="Private" value="Private">
+                    <label for="Private">私立</label>
+                  </div>
+                  <div class="col-12">
+                    <input type="checkbox" name="Public" id="Public" value="Public">
+                    <label for="Public">公立</label>
+                  </div>
+                  <label for="select-59df" class="u-label">有無公共化</label>
+                  <div class="col-4 col-12-narrower">
+                    <input type="radio" id="Unlimited" name="publicization" value = "Unlimited" checked>
+                    <label for="Unlimited">不限</label>
+                  </div>
+                  <div class="col-4 col-12-narrower">
+                    <input type="radio" id="None" value="None" name="publicization">
+                    <label for="None">沒有</label>
+                  </div>
+                  <div class="col-12">
+                    <input type="radio" id="Have" value="Have" name="publicization">
+                    <label for="Have">有</label>
+                  </div>
+                  <label for="select-59df" class="u-label">時段</label>
+                  <div class="col-4 col-12-narrower">
+                    <input type="checkbox" name="Daytime" id="Daytime" value="Daytime"> 
+                    <label for="Daytime">日間</label>
+                  </div>
+                  <div class="col-4 col-12-narrower">
+                    <input type="checkbox" name="Half-day" id="Half-day" value="Half-day"> 
+                    <label for="Half-day">半日</label>
+                  </div>
+                  <div class="col-12">
+                    <input type="checkbox" name="Temporary" id="Temporary" value="Temporary"> 
+                    <label for="Temporary">臨時</label>
+                  </div>
+                  <label for="select-59df" class="u-label">評鑑等級</label>
+                  <div class="col-12-narrower">
+                    <input type="checkbox" name="None3" id="None3" value="None"> 
+                    <label for="None3">無</label>
+                  </div>
+                  <div class="col-12-narrower">
+                    <input type="checkbox" name="Excellent" id="Excellent" value="Excellent"> 
+                    <label for="Excellent">優等</label>
+                  </div>
+                  <div class="col-12-narrower">
+                    <input type="checkbox" name="First-class" id="First-class" value="First-class"> 
+                    <label for="First-class">甲</label>
+                  </div>
+                  <div class="col-12-narrower">
+                    <input type="checkbox" name="Second-class" id="Second-class" value="Second-class"> 
+                    <label for="Second-class">乙</label>
+                  </div>
+                  <div class="col-12-narrower">
+                    <input type="checkbox" name="Third-class" id="Third-class" value="Third-class"> 
+                    <label for="Third-class">丙</label>
+                  </div>
+                  <div class="col-12-narrower">
+                    <input type="checkbox" name="Fourth-class" id="Fourth-class" value="Fourth-class"> 
+                    <label for="Fourth-class">丁</label>
+                  </div>
+                  <div class="col-12">
+                    <ul class="actions special">
+                      <li><input type="submit" value="搜尋" /></li>
+                    </ul>
+                  </div>
+              </div>
+            </form>
+					</div>
+				</section>
+
+
+        <section class="box">
+          <h3>機構</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>名字</th>
+                  <th>資訊</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>同仁之家</td>
+                  <td>
+                    <li><a href="#" class="button alt small">資訊</a></li>
+                  </td>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+
+			<!-- Footer -->
+				<footer id="footer">
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+	</body>
+</html>

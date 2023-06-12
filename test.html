@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>圖片預覽</title>
+  <style>
+    #preview {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  </style>
+  <script>
+    function previewImage(event) {
+      var reader = new FileReader();
+      reader.onload = function(){
+        var output = document.getElementById('preview');
+        output.src = reader.result;
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  </script>
+</head>
+<body>
+  <h1>上傳圖片預覽</h1>
+  <input type="file" onchange="previewImage(event)" accept="image/*">
+  <br>
+  <img id="preview" src="#" alt="圖片預覽">
+</body>
+</html>

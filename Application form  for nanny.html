@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>托嬰機構與保母查詢系統 : 保母身分申請</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">托嬰機構與保母查詢系統</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">首頁</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">功能</a>
+								<ul>
+									<li><a href="serch-nanny.html">保母搜尋</a></li>
+									<li><a href="serch-agency.html">機構搜尋</a></li>
+									<li><a href="Application form for agency.html">機構身分申請</a></li>
+									<li><a href="index.html">登出</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			<!-- Main -->
+            <section id="main" class="container">
+                <header>
+                    <h2>申請保母身分</h2>
+                    <p>填寫資料申請保母身分</p> 
+                </header>
+                <section class="box">
+                    <h2>基本資料</h2>
+                    <form method="post" action="#">
+                        <label for="imageUpload">服務登記證上傳：</label>
+                        <input type="file" id="imageUpload" name="imageUpload">
+                        <label for="imageUpload">技術士證照上傳：</label>
+                        <input type="file" id="imageUpload" name="imageUpload">
+                        <div class="col-4">
+                            <label>姓名</label>
+                            <input type="text" name="username" id="username" value=""> 
+                        </div>
+                        <div class="col-4">
+                            <label>性別</label>
+                            <input type="radio" name="gender" id="meal" value="meal">
+                            <label for="gender">男</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="gender">女</label>
+                        </div>
+                        <div class="col-4">
+                            <label>電話</label>
+                            <input type="text" name="phone" id="phone" value="">
+                            <label>年齡</label>
+                            <input type="text" name="age" id="age" value="">
+                            <label>最高學歷</label>
+                            <input type="text" name="education" id="education" value="">
+                            <label>登記編號</label>
+                            <input type="text" name="registration number" id="registration number" value="">
+                            <label>取證日期</label>
+                            <input type="text" name="issuance" id="issuance" value="20020101">
+                            <label>人員資格</label>
+                            <input type="text" name="credentials" id="credentials" value="">
+                            <label>技術證號</label>
+                            <input type="text" name="certification number" id="certification number" value="">
+                            <label>保母編號</label>
+                            <input type="text" name="childcare provider number" id="childcare provider number" value="">
+                            <label>準公共化資格</label>
+                            <input type="radio" name="publicization" id="Yes" value="Yes">
+                            <label for="Yes">有</label>
+                            <input type="radio" name="publicization" id="No" value="No">
+                            <label for="No">沒有</label>
+                            <label>收托多胞胎意願</label>
+                            <input type="radio" name="twins" id="Yes1" value="Yes">
+                            <label for="Yes1">有</label>
+                            <input type="radio" name="twins" id="No1" value="No">
+                            <label for="No1">沒有</label>
+                            <label>收托新原住民</label>
+                            <input type="radio" name="aboriginals" id="Yes2" value="Yes">
+                            <label for="Yes2">有</label>
+                            <input type="radio" name="aboriginals" id="No2" value="No">
+                            <label for="No2">沒有</label>
+                            <label>收托對象</label>
+                            <input type="radio" name="General" id="nospecial" value="Yes">
+                            <label for="nospecial">有</label>
+                            <input type="radio" name="General" id="special" value="No">
+                            <label for="special">沒有</label>
+                            <label>收托年齡 (都可以兩個都要勾)</label>
+                            <input type="checkbox" name="Age of enrollment" id="zerototwo" value="zerototwo">
+                            <label for="zerototwo">0~2歲</label>
+                            <input type="checkbox" name="Age of enrollment" id="uptwo" value="uptwo">
+                            <label for="uptwo">2歲以上</label>
+                            <label>托育服務位置</label>
+                            <input type="text" name="address" id="address" value="">
+                        </div>
+                        <h2>托育現況設定</h2>
+                        <div class="col-4">
+                            <label>收托服務類型</label>
+                            <input type="checkbox" name="Type of care" id="inhome" value="inhome">
+                            <label for="inhome">在宅服務</label>
+                            <input type="checkbox" name="Type of care" id="Mobile" value="Mobile">
+                            <label for="Mobile">到宅服務</label>
+                            <label>托育時段</label>
+                            <input type="checkbox" name="DaytimeWeekday" id="DaytimeWeekday" value="DaytimeWeekday">
+                            <label for="DaytimeWeekday">日間(平日)</label>
+                            <input type="checkbox" name="DaytimeWeekend" id="DaytimeWeekend" value="DaytimeWeekend">
+                            <label for="DaytimeWeekend">日間(假日)</label>
+                            <input type="checkbox" name="Allday" id="Allday" value="Allday">
+                            <label for="Allday">全天</label>
+                            <input type="checkbox" name="NighttimeWeekday" id="NighttimeWeekday" value="NighttimeWeekday">
+                            <label for="NighttimeWeekday">晚間(平日)</label>
+                            <input type="checkbox" name="NighttimeWeekend" id="NighttimeWeekend" value="NighttimeWeekend">
+                            <label for="NighttimeWeekend">晚間(假日)</label>
+                            <label>時薪</label>
+                            <input type="text" name="salary" id="salary" value="">
+                        </div>
+                        <h2>所屬居家托育服務中心(選填)</h2>
+                        <div class="col-4">
+                            <label>居家托育服務中心名稱</label>
+                            <input type="text" name="Service Center Name" id="Service Center Name" value="虎尾托育服務中心">
+                            <label>服務中心聯絡電話</label>
+                            <input type="text" name="Contact Phone Number" id="Contact Phone Number" value="">
+                            <label>地址</label>
+                            <input type="text" name="Contacet address" id="Contacet address" value="">
+                        </div>
+                        <div class="col-12">
+                            <ul class="actions">
+                                <li><input type="submit" value="送出" /></li>
+                            </ul>
+                        </div>
+                    </form>
+                </section>
+            </section>>
+		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
