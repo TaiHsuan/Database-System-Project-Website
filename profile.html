@@ -5,6 +5,23 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			.image-container {
+			  width: 300px; /* 設定圖片區域的寬度 */
+			  height: 300px; /* 設定圖片區域的高度 */
+			  border: 1px solid #ccc; /* 設定邊框樣式 */
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			}
+		
+			.image-container img {
+			  max-width: 100%; /* 設定圖片最大寬度為容器寬度 */
+			  max-height: 100%; /* 設定圖片最大高度為容器高度 */
+			}
+		  </style>
+
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -41,6 +58,7 @@
 										<ul>
 											<label for="imageUpload">上傳圖片：</label>
                                             <input type="file" id="imageUpload" name="imageUpload1">
+											<p><span class="image-container"><img src="images/pic05.jpg" alt="" />
 										</ul>
 										<ul>
 											<label for="text" class="label">姓名
@@ -60,16 +78,16 @@
 											</label>
 
 											<label for="text" class="label	">密碼
-											<input type="email" name="password" id="password" value="" placeholder="Password" />
+											<input type="password" name="password" id="password" value="" placeholder="Password" />
 											</label>
 
-											<input type="submit" value="顯示密碼" />
+											<a class="button special" onclick="">顯示密碼</a>
 											<input type="submit" value="更新" />
 										</ul>
 									</div>
 								</form>
-									<label for="text" class="label	">身分
-									<input type="label" name="identity" id="identity" value="" placeholder="Identity" />
+									<label for="text" class="label">身分
+									<input type="identity" name="identity" id="identity" value="" placeholder="Identity" />
 									</label>
 									<ul class="actions">
 										<li><a href="Application form  for nanny.html" class="button">保母申請</a></li>
