@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>托嬰機構與保母查詢系統 : 機構身分申請</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+        <style>
+			.image-container {
+			  width: 300px; /* 設定圖片區域的寬度 */
+			  height: 300px; /* 設定圖片區域的高度 */
+			  border: 1px solid #ccc; /* 設定邊框樣式 */
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			}
+		
+			.image-container img {
+			  max-width: 100%; /* 設定圖片最大寬度為容器寬度 */
+			  max-height: 100%; /* 設定圖片最大高度為容器高度 */
+			}
+		  </style>
+          
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Main -->
+            <section id="main" class="container">
+
+                <section class="box">
+                    <h2>基本資料</h2>
+                    <form method="post" action="#">
+                        <label for="imageUpload">服務登記證：</label>
+                        <p><span class="image-container"><img src="images/pic05.jpg" alt="" /></span></p>
+                        <div class="col-4">
+                            <label>機構名稱</label>
+                            <input type="text" name="agency name" id="agency name" value=""> 
+                            <label>機構地址</label>
+                            <input type="text" name="agency address" id="agency address" value=""> 
+                            <label>負責人姓名</label>
+                            <input type="text" name="name" id="name" value="">
+                            <label>聯絡電話</label>
+                            <input type="text" name="agency phone" id="agency phone" value="">
+                            <label>核定收托</label>
+                            <input type="text" name="collection" id="collection" value="">
+                            <label>實際收托</label>
+                            <input type="text" name="real collection" id="real collection" value="">
+                            <label>評鑑等級</label>
+                            <input type="text" name="evaluation level" id="evaluation level" value="">
+                            <label>評鑑年度</label>
+                            <input type="text" name="evaluation year" id="evaluation year" value="20020101">
+                            <label>總面積</label>
+                            <input type="text" name="total area" id="total area" value="">
+                            <label>室內面積</label>
+                            <input type="text" name="indoor area" id="indoor area" value="">
+                            <label>室外面積</label>
+                            <input type="text" name="outdoor area" id="outdoor area" value="">
+                            <label>公共安全說明</label>
+                            <input type="text" name="public safety" id="public safety" value="">
+                            <label>消防安全說明</label>
+                            <input type="text" name="fire Safety" id="fire Safety" value="">
+                            <label>準公共化資格</label>
+                            <input type="radio" name="publicization" id="Yes" value="Yes">
+                            <label for="Yes">有</label>
+                            <input type="radio" name="publicization" id="No" value="No">
+                            <label for="No">沒有</label>
+                        </div>
+                        <h2>機構公共人員</h2>
+                        <div class="col-4">
+                            <label>主管人數</label>
+                            <input type="text" name="director" id="director" value="">
+                            <label>行政人數</label>
+                            <input type="text" name="administrative" id="administrative" value="">
+                            <label>托育員人數</label>
+                            <input type="text" name="nursery staff" id="nursery staff" value="">
+                            <label>醫院及護理人員</label>
+                            <input type="text" name="hospital" id="hospital" value="">
+                            <label>廚工</label>
+                            <input type="text" name="kitchen" id="kitchen" value="">
+                            <label>其他人員</label>
+                            <input type="text" name="others" id="others" value="">
+                        </div>
+                        <h2>收退費設定</h2>
+                        <div class="col-4">
+                            <label>托育方式</label>
+                            <input type="checkbox" name="half day care" id="half day care" value="Half day care">
+                            <label for="half day care">半日托育</label>
+                            <input type="checkbox" name="day care" id="day care" value="day care">
+                            <label for="day care">日間托育</label>
+                            <input type="checkbox" name="temporary care" id="temporary care" value="temporary care">
+                            <label for="temporary care">臨時托育</label>
+                        </div>
+                        <h3>半日托育</h3>
+                        <label>托育費</label>
+                        <input type="text" name="money" id="money" value="金額">
+                        <input type="text" name="caption" id="caption" value="說明">
+                        <label>餐點費</label>
+                        <input type="text" name="money" id="money" value="金額">
+                        <input type="text" name="caption" id="caption" value="說明">
+                        <h3>日間托育</h3>
+                        <label>托育費</label>
+                        <input type="text" name="money" id="money" value="金額">
+                        <input type="text" name="caption" id="caption" value="說明">
+                        <label>餐點費</label>
+                        <input type="text" name="money" id="money" value="金額">
+                        <input type="text" name="caption" id="caption" value="說明">
+                        <h3>臨時托育</h3>
+                        <label>托育費</label>
+                        <input type="text" name="money" id="money" value="金額">
+                        <input type="text" name="caption" id="caption" value="說明">
+                        <label>餐點費</label>
+                        <input type="text" name="money" id="money" value="金額">
+                        <input type="text" name="caption" id="caption" value="說明">
+                        <label>備註</label>
+                        <input type="text" name="remark" id="remark" value="">
+                        <label>退費說明</label>
+                        <input type="text" name="refund instructions" id="refund instructions" value="">
+                        <div class="col-12">
+                            <ul class="actions">
+                                <li><span class="button special" onclick="">不通過</span></li>
+                                <li><span class="button special" onclick="">通過</span></li>
+                            </ul>
+                        </div>
+                    </form>
+                </section>
+            </section>>
+		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
