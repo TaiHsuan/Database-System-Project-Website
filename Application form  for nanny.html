@@ -5,6 +5,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            .preview {
+              max-width: 300px;
+              max-height: 300px;
+            }
+        </style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -36,9 +42,11 @@
                     <h2>基本資料</h2>
                     <form method="post" action="#">
                         <label for="imageUpload">服務登記證上傳：</label>
-                        <input type="file" id="imageUpload" name="imageUpload">
+                        <input type="file" onchange="previewImage(event)" accept="image/*">
+                        <img class="preview" id="preview" src="#" alt="圖片預覽">
                         <label for="imageUpload">技術士證照上傳：</label>
-                        <input type="file" id="imageUpload" name="imageUpload">
+                        <input type="file" onchange="previewImage2(event)" accept="image/*">
+                        <img class="preview" id="preview2" src="#" alt="圖片預覽">
                         <div class="col-4">
                             <label>姓名</label>
                             <input type="text" name="username" id="username" value=""> 
@@ -135,13 +143,31 @@
             </section>>
 		</div>
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            function previewImage(event) {
+                var reader = new FileReader();
+                reader.onload = function(){
+                var output = document.getElementById('preview');
+                output.src = reader.result;
+                };
+                reader.readAsDataURL(event.target.files[0]);
+            }
+            function previewImage2(event) {
+                var reader = new FileReader();
+                reader.onload = function(){
+                var output = document.getElementById('preview2');
+                output.src = reader.result;
+                };
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        </script>
 
 	</body>
 </html>
