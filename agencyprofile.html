@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>托嬰機構與保母查詢系統 : 個人資訊</title>
+		<title>托嬰機構與保母查詢系統 : </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -73,7 +75,36 @@
                         <div class="col-12">
                         </div>
                 </section>
-            </section>>
+            </section>
+            
+            <section class="box">
+                <header>
+                    <p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>真的是太誇張了</p>
+                </header>
+                <hr />
+            </section>
+
+            <section class="box">
+                <header>
+                    <div class="rating-box">
+                        <h1 class="rating-boxH1">Rating-System</h1>
+                        <div class="rating">
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        </div>
+                        <h4 id="rating-value"></h1>
+                        </div>
+                        <textarea id="comment" placeholder="輸入評論..."></textarea>
+                        <ul class="action">
+                            <a class="button special">發送評論</a>
+                        </ul>
+                    </div>
+                </header>
+            <section> 
+
 		</div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -83,6 +114,41 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script>
+                const stars=document.querySelector(".rating").children;
+                let ratingValue
+                let index //目前選到的星星
+                document.getElementById("rating-value").innerHTML = "請給分"
+                for(let i=0;i<stars.length;i++){
+                stars[i].addEventListener("mouseover",function(){
+                //  console.log(i)
+                document.getElementById("rating-value").innerHTML = "正在打分數"
+                for(let j=0;j<stars.length;j++){
+                stars[j].classList.remove("fa-star")//reset 所有星星
+                stars[j].classList.add("fa-star-o")
+                }
+                for(let j=0;j<=i;j++){
+                stars[j].classList.remove("fa-star-o") //先移除空心的星星
+                stars[j].classList.add("fa-star") //添加新的星星 如果i=j表示選中的
+                }
+                })
+                stars[i].addEventListener("click",function(){
+                ratingValue=i+1
+                index=i
+                document.getElementById("rating-value").innerHTML = "你打的分數是 "+ratingValue
+                })
+                stars[i].addEventListener("mouseout",function(){
+                for(let j=0;j<stars.length;j++){
+                stars[j].classList.remove("fa-star")//reset 所有星星
+                stars[j].classList.add("fa-star-o")
+                }
+                for(let j=0;j<=index;j++){
+                stars[j].classList.remove("fa-star-o")
+                stars[j].classList.add("fa-star")
+                }
+                })
+                }
+            </script>
 
 	</body>
 </html>
