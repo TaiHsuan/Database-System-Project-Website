@@ -43,8 +43,7 @@
 
                     <h2>附件檔案</h2>
                     <ul>
-                    <li><a href="附件1.pdf">附件1</a></li>
-                    <li><a href="附件2.docx">附件2</a></li>
+                    <li><a href="#" id="download-link">檔案名稱</a></li>
                     </ul>
                     </div>
             </div>
@@ -58,5 +57,22 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+        <script>
+            // 假設你的資料庫連線已設定並取得檔案資料的方式
+            // 這裡僅示範一個假設的函式 getFilePathFromDatabase()，你需要自行修改以符合你的程式碼結構
+        
+            // 從資料庫取得檔案路徑
+            var filePath = getFilePathFromDatabase();
+        
+            if (filePath) {
+              // 檔案存在，設定下載連結
+              var downloadLink = document.getElementById("download-link");
+              downloadLink.href = filePath;
+              downloadLink.style.display = "inline";
+            } else {
+              // 檔案不存在的處理
+              alert("找不到要下載的檔案");
+            }
+          </script>
 </body>
 </html>
