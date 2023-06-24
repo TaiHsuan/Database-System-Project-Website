@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>托嬰機構與保母查詢系統 : 機構身分申請</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            #preview {
+              max-width: 300px;
+              max-height: 300px;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">托嬰機構與保母查詢系統</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">首頁</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">功能</a>
+								<ul>
+									<li><a href="manager_approved_nanny.html">已審核保母</a></li>
+									<li><a href="manager_unapproved_nanny.html">未審核保母</a></li>
+									<li><a href="manager_approved_agency.html">已審核機構</a></li>
+									<li><a href="manager_unapproved_agency.html">未審核機構</a></li>
+									<li><a href="manager_approved_announcement.html">已審核公告</a></li>
+									<li><a href="manager_unapproved_announcement.html">未審核公告</a></li>
+                                    <li><a href="login.html">登出</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			<!-- Main -->
+            <section  id="main" class="container">
+                <header>
+                    <h2>管理者頁面</h2>
+                </header>
+           
+
+                <section class="box">
+                    <h3>已審核</h3>
+                    <p>保母: 公告: 機構:</p>
+                    <ul class="actions">
+                        <li><a href="manager_approved_nanny.html" class="button special">已審核保母</a></li>
+                        <li><a href="manager_approved_agency.html" class="button special">已審核機構</a></li>
+                        <li><a href="manager_approved_announcement.html" class="button special">已審核公告</a></li>
+                    </ul>
+                    <h3>未審核</h3>
+                    <p>保母: 公告: 機構:</p>
+                    <ul class="actions">  
+                        <li><a href="manager_unapproved_nanny.html" class="button special">未審核保母</a></li>
+                        <li><a href="manager_unapproved_agency.html" class="button special">未審核機構</a></li>
+                        <li><a href="manager_unapproved_announcement.html" class="button special">未審核公告</a></li>
+                    </ul>
+                </section>
+            </section>
+
+
+
+        </div>
+    </body>
+
+
+		<!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function(){
+            var output = document.getElementById('preview');
+            output.src = reader.result;
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+        </script>
+
+	</body>
+</html>
