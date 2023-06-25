@@ -46,8 +46,21 @@
                             <input type="text" name="collection" id="collection" value="">
                             <label>實際收托</label>
                             <input type="text" name="real collection" id="real collection" value="">
-                            <label>評鑑等級</label>
-                            <input type="text" name="evaluation level" id="evaluation level" value="">
+                            <label for="select-59df" class="u-label">評鑑等級</label>
+                            <div class="col-12-narrower">
+                                <input type="radio" name="evaluation" id="None3" value="None"> 
+                                <label for="None3">無</label>
+                                <input type="radio" name="evaluation" id="Excellent" value="Excellent"> 
+                                <label for="Excellent">優等</label>
+                                <input type="radio" name="evaluation" id="First-class" value="First-class"> 
+                                <label for="First-class">甲</label>
+                                <input type="radio" name="evaluation" id="Second-class" value="Second-class"> 
+                                <label for="Second-class">乙</label>
+                                <input type="radio" name="evaluation" id="Third-class" value="Third-class"> 
+                                <label for="Third-class">丙</label>
+                                <input type="radio" name="evaluation" id="Fourth-class" value="Fourth-class"> 
+                                <label for="Fourth-class">丁</label>
+                            </div>
                             <label>評鑑年度</label>
                             <input type="text" name="evaluation year" id="evaluation year" value="20020101">
                             <label>總面積</label>
@@ -60,6 +73,11 @@
                             <input type="text" name="public safety" id="public safety" value="">
                             <label>消防安全說明</label>
                             <input type="text" name="fire Safety" id="fire Safety" value="">
+                            <label>機構類別</label>
+                            <input type="radio" name="public" id="public" value="public">
+                            <label for="public">公立</label>
+                            <input type="radio" name="public" id="private" value="private">
+                            <label for="private">私立</label>
                             <label>準公共化資格</label>
                             <input type="radio" name="publicization" id="Yes" value="Yes">
                             <label for="Yes">有</label>
@@ -124,7 +142,29 @@
                         </div>
                     </form>
                 </section>
-            </section>>
+            </section>
+            <!-- Footer -->
+			<footer id="footer">
+				<div class="row gtr-50 gtr-uniform">
+				<label class="col-4"><a href="aboutus.html" >關於我們</a></label>
+				<ul class="col-4">
+					<label style="color: antiquewhite;">帳號管理</label>
+					<a href="register.html">申請頁面</a>
+					<a href="login.html">登入頁面</a>
+					<a href="profile.html">個人資訊頁面</a>
+					<a href="Application form  for nanny.html">申請保母</a>
+					<a href="Application form for agency.html">申請機構</a>
+				</ul>
+				<ul class="col-4">
+					<label style="color: antiquewhite;">查詢</label>
+					<a href="serch-nanny.html">保母查詢</a>
+					<a href="serch-agency.html">機構查詢</a>
+				</ul>
+				</div>
+				<ul calss="copyright">
+				<label>Site design © 2023 NFU team05</label>
+				</ul>
+			</footer>
 		</div>
 		<!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
